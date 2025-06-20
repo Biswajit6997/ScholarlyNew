@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scholarly - Automated Publication Summarizer</title>
+  <link rel="stylesheet" href="./style.css" />
+   <!-- <script type="module" src="./login.js" defer></script> -->
+
+</head>
+<body>
+  <!-- NAVIGATION BAR -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Scholarly</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#usecase">Use Cases</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <!-- <a href="#" class="btn">Login/ Register</a> -->
+        <a href="./login.html" class="btn register">login / Register</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRODUCTION -->
+  <section class="intro">
+    <h2>Welcome to Scholarly</h2>
+    <p>
+      <strong>Scholarly</strong> is a powerful academic tool designed to assist faculty members in automating the process of summarizing their research publications. In an era where time and accuracy matter most, Scholarly reduces the manual effort of collecting, formatting, and organizing scholarly works by leveraging web scraping, natural language processing, and AI-driven summarization.
+    </p>
+    <p>
+      Whether it's for academic profiling, accreditation reports, or personal use, Scholarly ensures your research is presented professionally and efficiently — with just a few clicks.
+    </p>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="working" id="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li><strong>Input:</strong> Faculty enters their Google Scholar profile link and email address.</li>
+      <li><strong>Scraping:</strong> Our system extracts relevant data such as titles, abstracts, authors, and citations using automated scraping tools.</li>
+      <li><strong>Summarization:</strong> Using NLP algorithms like PageRank and Cosine Similarity, each publication abstract is summarized. Incomplete abstracts are auto-completed using GPT-2.</li>
+      <li><strong>Presentation:</strong> The summarized data is displayed visually, downloadable as a PDF, and sent to the user’s email.</li>
+    </ol>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <h2>Core Features</h2>
+    <ul>
+      <li><strong>Automated Web Scraping:</strong> Extracts data in real-time from Google Scholar.</li>
+      <li><strong>AI-Based Summarization:</strong> NLP techniques ensure meaningful and concise summaries.</li>
+      <li><strong>GPT-2 Completion:</strong> Fixes truncated abstracts with intelligent auto-completion.</li>
+      <li><strong>PDF/DOCX Export:</strong> Download structured summaries for use in reports.</li>
+      <li><strong>Email Integration:</strong> Get your summary sent directly to your inbox.</li>
+      <li><strong>Visualizations:</strong> Year-wise publication charts generated using Matplotlib.</li>
+      <li><strong>User-Friendly Interface:</strong> Accessible via a simple, interactive web app.</li>
+    </ul>
+  </section>
+
+  <!-- TECHNOLOGY STACK -->
+  <section class="tech-stack" id="tech">
+    <h2>Technology Stack</h2>
+    <p>The system is developed using the following modern tools and technologies:</p>
+    <ul>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Streamlit (for UI)</li>
+      <li><strong>Backend:</strong> Python with Flask (lightweight server-side logic)</li>
+      <li><strong>Scraping:</strong> Selenium WebDriver, BeautifulSoup, Requests (data extraction)</li>
+      <li><strong>NLP & AI:</strong> NLTK, NetworkX (PageRank), GPT-2 (HuggingFace Transformers)</li>
+      <li><strong>Visualization:</strong> Matplotlib, Pandas</li>
+      <li><strong>Reporting:</strong> ReportLab for PDF, python-docx for Word export</li>
+      <li><strong>Email:</strong> smtplib for email delivery with SSL security</li>
+    </ul>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="benefits" id="usecase">
+    <h2>Who Can Use Scholarly?</h2>
+    <p>This system can serve a wide range of users and institutions:</p>
+    <ul>
+      <li><strong>Faculty Members:</strong> Generate well-organized summaries for institutional profile updates.</li>
+      <li><strong>Academic Institutions:</strong> Use for NAAC, NBA, and AICTE reports.</li>
+      <li><strong>Research Scholars:</strong> Track and summarize research work effortlessly.</li>
+      <li><strong>Department Coordinators:</strong> Maintain research stats and documentation year-wise.</li>
+      <li><strong>Admin Staff:</strong> Reduce time spent on formatting faculty profiles manually.</li>
+    </ul>
+  </section>
+
+  <!-- MEET THE TEAM -->
+  <section class="team" id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="./img/akash.jpeg" alt="Akash Modak">
+        <p><b>Akash Modak</b><br>Scraping & Backend Developer</p>
+      </div>
+      <div class="member">
+        <img src="./img/biswajitdey.png" alt="Biswajit Dey">
+        <p><b>Biswajit Dey</b><br>UI Designer & Frontend Developer</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/150" alt="Rupjit Maity">
+        <p><b>Rupjit Maity</b><br>PDF Generation & Integration</p>
+      </div>
+      <div class="member">
+        <img src="./img/arup.jpg" alt="Arup Ghosh">
+        <p><b>Arup Ghosh</b><br>Database & Email System</p>
+      </div>
+      <div class="member">
+        <img src="./img/susmita.jpg" alt="Susmita Das">
+        <p><b>Susmita Das</b><br>Summarization & NLP Logic</p>
+      </div>
+    </div>
+    <p style="text-align:center;">Guided by <strong>Mrs. Sulekha Das</strong></p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Simplify Your Academic Profile?</h2>
+    <p>Click below to begin generating your research publication summary in seconds.</p>
+    <a href="#" class="button">Get Started Now</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Scholarly Project | Department of CSE-IT | Techno Engineering College Banipur</p>
+    <p>Email: scholarly.project@gmail.com | Contact: +91-XXXXXXXXXX</p>
+  </footer>
+</body>
+</html>
