@@ -178,3 +178,93 @@ footer {
   font-size: 16px;
   margin-top: 50px;
 }
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablets (width up to 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .auth-buttons {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p, ul li, ol li {
+    font-size: 17px;
+  }
+}
+
+/* Mobiles (width up to 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .auth-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .intro, .working, .features, .tech-stack, .benefits, .team {
+    text-align: center;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    width: 85%;
+    max-width: 300px;
+  }
+
+  .cta h2 {
+    font-size: 26px;
+  }
+
+  .cta p {
+    font-size: 18px;
+  }
+
+  .cta .button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
